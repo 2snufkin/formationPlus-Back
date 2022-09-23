@@ -14,4 +14,8 @@ public class AttestationService {
         return attestationRepository.save(attestation);
     }
 
+    public Attestation getAttestationByEtuidantId(int id){
+        return attestationRepository.getAttestationByEtudiant_Id(id);
+    }
+
 }
